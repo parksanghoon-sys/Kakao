@@ -1,4 +1,5 @@
 ﻿using Jamesnet.Wpf.Global.Location;
+using Kakao.Forms.Local.ViewModels;
 using Kakao.Friends.Local.ViewModels;
 using Kakao.Login.Local.ViewModels;
 using Kako.Forms.UI.Views;
@@ -12,6 +13,7 @@ namespace Kakao.Settings
     {
         protected override void Match(ViewModelLocatorCollection items)
         {
+            items.Register<KakaoWindow, KakaoViewModel>();
             items.Register<LoginContent, LoginContentViewModel>();
             items.Register<FriendsContent, FriendsContentViewModel>();
         }

@@ -15,11 +15,11 @@
                             <TextBlock Text="Friends"
                                        FontSize="24"
                                        Margin="10"/>
-                            <Button Content="Login"
+                            <Button Content="Logout"
                                     Margin="10"
                                     Padding="8 4 8 4"
                                     HorizontalAlignment="Left"
-                                    Command="{Binding LoginCommand}"/>
+                                    Command="{Binding LogoutCommand}"/>
                         </StackPanel>
                     </Border>
                 </ControlTemplate>
