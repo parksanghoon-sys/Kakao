@@ -1,8 +1,10 @@
 ﻿using Jamesnet.Wpf.Global.Location;
+using Kakao.Chats.Local.ViewModels;
 using Kakao.Forms.Local.ViewModels;
 using Kakao.Friends.Local.ViewModels;
 using Kakao.Login.Local.ViewModels;
 using Kakao.Main.Local.ViewModels;
+using Kakao.More.Local.ViewModels;
 using Kako.Forms.UI.Views;
 
 namespace Kakao.Settings
@@ -18,6 +20,8 @@ namespace Kakao.Settings
             items.Register<LoginContent, LoginContentViewModel>();
             items.Register<FriendsContent, FriendsContentViewModel>();
             items.Register<MainContent, MainContentViewModel>();
+            items.Register<ChatsContent, ChatsContentViewModel>();
+            items.Register<MoreContent, MoreContentViewModel>();
         }
     }
 }

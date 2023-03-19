@@ -1,9 +1,15 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Jamesnet.Wpf.Controls;
 using Jamesnet.Wpf.Mvvm;
+using Kakao.Core.Models;
 using Kakao.Core.Names;
 using Prism.Ioc;
 using Prism.Regions;
+using System;
+using System.Collections.Generic;
+using System.Windows.Controls;
+using System.Windows.Documents;
 
 namespace Kakao.Main.Local.ViewModels
 {
@@ -11,24 +17,37 @@ namespace Kakao.Main.Local.ViewModels
     {
         private readonly IRegionManager _regionManager;
         private readonly IContainerProvider _containerProvider;
+
+        [ObservableProperty]
+        private List<MenuModel> _menus;
+
+        [ObservableProperty]
+        private MenuModel _menu;
         public MainContentViewModel(IRegionManager regionManager, IContainerProvider containerProvider)
         {
             _regionManager = regionManager;
             _containerProvider = containerProvider;
+
+            Menus = GetMenus();
         }
-
-        [RelayCommand]
-        private void Friends()
+        partial void OnMenuChanged(MenuModel value)
         {
-            // Region.Add(FriendsView 를하겠다는 커맨드
             var contentRegion = _regionManager.Regions[RegionNameManager.Contentregion];
-            var friendsContent = _containerProvider.Resolve<IViewable>(ContentNameManager.Friends);
+            var content = _containerProvider.Resolve<IViewable>(value.Id);
 
-            if (!contentRegion.Views.Contains(friendsContent))
+            if (!contentRegion.Views.Contains(content))
             {
-                contentRegion.Add(friendsContent);
+                contentRegion.Add(content);
             }
-            contentRegion.Activate(friendsContent);
+            contentRegion.Activate(content);
+        }
+        private List<MenuModel> GetMenus()
+        {
+            List<MenuModel> sourse = new();
+            sourse.Add(new MenuModel().DataGetId(ContentNameManager.Chats));
+            sourse.Add(new MenuModel().DataGetId(ContentNameManager.Friends));
+            sourse.Add(new MenuModel().DataGetId(ContentNameManager.More));
+            return sourse;
         }
 
         [RelayCommand]
@@ -44,5 +63,6 @@ namespace Kakao.Main.Local.ViewModels
             }
             mainRegion.Activate(LoginContent);
         }
+
     }
 }

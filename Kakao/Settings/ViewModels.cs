@@ -22,6 +22,8 @@ namespace Kakao.Settings
             containerRegistry.RegisterSingleton<IViewable, LoginContent>(ContentNameManager.Login);
             containerRegistry.RegisterSingleton<IViewable, FriendsContent>(ContentNameManager.Friends);
             containerRegistry.RegisterSingleton<IViewable, MainContent>(ContentNameManager.Main);
+            containerRegistry.RegisterSingleton<IViewable, ChatsContent>(ContentNameManager.Chats);
+            containerRegistry.RegisterSingleton<IViewable, MoreContent>(ContentNameManager.More);
 
             /// 생성당시 생성된다
             //containerRegistry.RegisterInstance(typeof(ViewModels));
