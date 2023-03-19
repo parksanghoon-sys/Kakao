@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using Jamesnet.Wpf.Controls;
 using Jamesnet.Wpf.Mvvm;
+using Kakao.Core.Names;
 using Prism.Ioc;
 using Prism.Regions;
 
@@ -21,8 +22,8 @@ namespace Kakao.Friends.Local.ViewModels
         private void Logout()
         {
             // Region.Add(FriendsView 를하겠다는 커맨드
-            var mainRegion = _regionManager.Regions["MainRegion"];
-            var loginContent = _containerProvider.Resolve<IViewable>("LoginContent");
+            var mainRegion = _regionManager.Regions[RegionNameManager.Mainregion];
+            var loginContent = _containerProvider.Resolve<IViewable>(ContentNameManager.Login);
             
             if(!mainRegion.Views.Contains(loginContent))
             {

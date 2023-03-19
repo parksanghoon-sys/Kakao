@@ -2,6 +2,7 @@
 using Kakao.Forms.Local.ViewModels;
 using Kakao.Friends.Local.ViewModels;
 using Kakao.Login.Local.ViewModels;
+using Kakao.Main.Local.ViewModels;
 using Kako.Forms.UI.Views;
 
 namespace Kakao.Settings
@@ -16,6 +17,7 @@ namespace Kakao.Settings
             items.Register<KakaoWindow, KakaoViewModel>();
             items.Register<LoginContent, LoginContentViewModel>();
             items.Register<FriendsContent, FriendsContentViewModel>();
+            items.Register<MainContent, MainContentViewModel>();
         }
     }
 }
