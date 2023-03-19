@@ -3,16 +3,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:views ="clr-namespace:Kako.Forms.UI.Views">
 
-    <Style TargetType="{x:Type views:LoginContent}">
-        <Setter Property="Background" Value="Yellow"/>
+    <Style TargetType="{x:Type views:FriendsContent}">
+        <Setter Property="Background" Value="#FFFFFF"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type views:LoginContent}">
+                <ControlTemplate TargetType="{x:Type views:FriendsContent}">
                     <Border Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <StackPanel>
-                            <TextBlock Text="Login"
+                            <TextBlock Text="Friends"
                                        FontSize="24"
                                        Margin="10"/>
                             <Button Content="Login"
