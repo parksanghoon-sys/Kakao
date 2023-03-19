@@ -3,6 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Kakao.Forms;component/Themes/Views/KakaoWindow.xaml"/>
+        <ResourceDictionary Source="/Kako.Login;component/Themes/Views/KakaoWindow.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

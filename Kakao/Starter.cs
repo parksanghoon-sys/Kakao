@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kakao.Settings;
+using System;
 
 namespace Kakao
 {
@@ -7,7 +8,11 @@ namespace Kakao
         [STAThread]
         public static void Main(string[] args)
         {
-            _ = new App().Run();
+            _ = new App()
+                .AddInversionModule<ViewModels>()
+                .AddInversionModule<DirectModules>()
+                .AddWireDataContext<WireDataContext>()
+                .Run();
         }
     }
 }

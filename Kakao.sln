@@ -5,7 +5,13 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kakao", "Kakao\Kakao.csproj", "{F35BE700-06E5-4598-8EA3-6A111A9F1307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kako.Forms", "Kako.Forms\Kako.Forms.csproj", "{9422DB6B-9CBD-49CA-853C-E585F98D593B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kakao.Forms", "Kako.Forms\Kakao.Forms.csproj", "{9422DB6B-9CBD-49CA-853C-E585F98D593B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio", "Studio", "{F22C1B0C-C034-4605-B231-C8D5EA49D039}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partial", "Partial", "{580C08BB-9FF7-48CD-B8D3-C014BA120FFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kakao.Login", "Kakao.Login\Kakao.Login.csproj", "{1AC29831-25D5-4F46-8D12-9A131AA13DF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{9422DB6B-9CBD-49CA-853C-E585F98D593B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9422DB6B-9CBD-49CA-853C-E585F98D593B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9422DB6B-9CBD-49CA-853C-E585F98D593B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC29831-25D5-4F46-8D12-9A131AA13DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC29831-25D5-4F46-8D12-9A131AA13DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC29831-25D5-4F46-8D12-9A131AA13DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC29831-25D5-4F46-8D12-9A131AA13DF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F35BE700-06E5-4598-8EA3-6A111A9F1307} = {F22C1B0C-C034-4605-B231-C8D5EA49D039}
+		{9422DB6B-9CBD-49CA-853C-E585F98D593B} = {580C08BB-9FF7-48CD-B8D3-C014BA120FFB}
+		{1AC29831-25D5-4F46-8D12-9A131AA13DF9} = {580C08BB-9FF7-48CD-B8D3-C014BA120FFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1777CA02-CE31-4601-A630-41E7327C5C56}
