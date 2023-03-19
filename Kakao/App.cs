@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Kako.Forms.UI.Views;
 using System.Windows;
 
 namespace Kakao
-{  
+{
     internal class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            Window window = new Window();
+            KakaoWindow window = new KakaoWindow();
             window.Show();
         }
     }
