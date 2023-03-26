@@ -4,5 +4,7 @@
     xmlns:local="clr-namespace:Kakao.LayoutSupport">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/TaskBarButton.xaml"/>
+        <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/PlaceholderTextBox.xaml"/>
+        <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/PlaceholderPasswordBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
