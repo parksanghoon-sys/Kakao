@@ -13,8 +13,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-        <Style TargetType="{x:Type units:FavoriteBoxItem}">
+
+    <Style TargetType="{x:Type units:FavoriteBoxItem}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:FavoriteBoxItem}">
