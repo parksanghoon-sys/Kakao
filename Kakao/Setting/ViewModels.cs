@@ -4,7 +4,7 @@ using Kako.Forms.UI.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 
-namespace Kakao.Settings
+namespace Kakao.Setting
 {
     /// <summary>
     /// LoginContent 라는 뷰네임에 뷰를 등록해주는곳
@@ -13,7 +13,7 @@ namespace Kakao.Settings
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            
+
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

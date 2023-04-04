@@ -7,5 +7,7 @@
         <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/PlaceholderTextBox.xaml"/>
         <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/PlaceholderPasswordBox.xaml"/>
         <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/FriendsBox.xaml"/>
+        <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/ExpandButton.xaml"/>
+        <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/SendTextBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

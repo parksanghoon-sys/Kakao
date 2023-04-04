@@ -1,7 +1,7 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 
-namespace Kakao.Settings
+namespace Kakao.Setting
 {
     /// <summary>
     /// Region 을 만들어서 관리 현재 LoginContent 클래스 를 MainRegion에 연결하는 기능
@@ -21,7 +21,7 @@ namespace Kakao.Settings
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+
         }
     }
 }
