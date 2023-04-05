@@ -17,7 +17,7 @@ namespace Kakao.Core.Talking
         }
         public void Add(FriendsModel _receiver, MessageModel message)
         {
-            if(_chatHistory.ContainsKey(_receiver))
+            if(_chatHistory.ContainsKey(_receiver) == false)
             {
                 _chatHistory.Add(_receiver, new());
             }
