@@ -1,6 +1,5 @@
 ﻿using Kakao.LayoutSupport.UI.Units;
 using System.Windows;
-using System.Windows.Input;
 
 namespace Kakao.Friends.Favorites.UI.Units
 {

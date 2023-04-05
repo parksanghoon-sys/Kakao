@@ -6,6 +6,7 @@ using Kakao.Login.Local.ViewModels;
 using Kakao.Main.Local.ViewModels;
 using Kakao.More.Local.ViewModels;
 using Kakao.Talk.Local.ViewModels;
+using Kakao.Tests.Local.ViewModels;
 using Kako.Forms.UI.Views;
 
 namespace Kakao.Setting
@@ -26,6 +27,7 @@ namespace Kakao.Setting
 
             items.Register<TalkWindow, TalkViewModel>();
             items.Register<TalkContent, TalkContentViewModel>();
+            items.Register<SimulatorWindow, SimulatorViewModel>();
         }
     }
 }

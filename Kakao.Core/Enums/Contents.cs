@@ -6,6 +6,7 @@
         Main,
         Friends,
         Chats,
-        More
+        More,
+        Simulator
     }
 }

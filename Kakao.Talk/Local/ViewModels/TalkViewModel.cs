@@ -1,8 +1,4 @@
-﻿using Jamesnet.Wpf.Controls;
-using Jamesnet.Wpf.Mvvm;
-using Kakao.Core.Names;
-using Prism.Ioc;
-using Prism.Regions;
+﻿using Jamesnet.Wpf.Mvvm;
 
 namespace Kakao.Talk.Local.ViewModels
 {
@@ -11,3 +7,4 @@ namespace Kakao.Talk.Local.ViewModels
 
     }
 }
+    

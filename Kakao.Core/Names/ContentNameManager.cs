@@ -9,5 +9,6 @@ namespace Kakao.Core.Names
         public static string Main => nameof(Contents.Main);
         public static string Chats => nameof(Contents.Chats);
         public static string More => nameof(Contents.More);
+        public static string Simulator => nameof(Contents.Simulator);
     }
 }

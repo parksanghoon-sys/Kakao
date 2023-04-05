@@ -19,8 +19,9 @@
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <james:JamesGrid Rows="*,Auto" Columns="*">
                             <units:ChatRichTextBox ItemsSource="{Binding Chats}" 
-                                                     Background="#FFBACEE0"
-                                                     BorderThickness="0"/>
+                                                    Background="#FFBACEE0"
+                                                    IsReadOnly="True"
+                                                    BorderThickness="0"/>
                             <based:SendTextBox EnterCommand="{Binding SendCommand}" Text="{Binding SendText, UpdateSourceTrigger=PropertyChanged}"/>
                         </james:JamesGrid>
                         

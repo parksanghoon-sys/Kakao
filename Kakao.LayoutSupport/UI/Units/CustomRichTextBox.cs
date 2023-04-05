@@ -1,17 +1,9 @@
 ﻿using Kakao.Core.Interface;
-using Kakao.Core.Models;
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
-using System.Windows.Interop;
-using System.Windows.Media;
 
 namespace Kakao.LayoutSupport.UI.Units
 {
@@ -63,13 +55,12 @@ namespace Kakao.LayoutSupport.UI.Units
                     var control = GetContainerForItemOverride();
                     control.DataContext = item;
                     Paragraph paragraph = new();
+                    paragraph.Margin = new(0);
 
                     if (item is IMessage message)
                     {
                         paragraph.TextAlignment = message.Type == "Send" ? TextAlignment.Right : TextAlignment.Left;
-                    }
-
-                    paragraph.Margin = new(0);
+                    }                    
                     paragraph.Inlines.Add(control);
                     document.Blocks.Add(paragraph);
                 }
@@ -81,7 +72,6 @@ namespace Kakao.LayoutSupport.UI.Units
         protected virtual Control GetContainerForItemOverride()
         {
             Control control = new();
-
             return control;
         }
     }
