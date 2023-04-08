@@ -9,7 +9,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <TextBlock Text="123124"/>
+                    <TextBlock Text="{Binding Name}"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -20,7 +20,8 @@
                 <ControlTemplate TargetType="{x:Type units:BirthdaysBoxItem}">
                     <Border Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}">
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="8 4 8 4">
                         <RadioButton GroupName="rd1" Style="{StaticResource Rdo}"
                                      IsChecked="{Binding RelativeSource={RelativeSource AncestorType=units:BirthdaysBoxItem},Path=IsSelected}">
                             ParkSang

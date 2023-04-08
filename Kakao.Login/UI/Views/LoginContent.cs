@@ -1,17 +1,16 @@
 ﻿using Jamesnet.Wpf.Controls;
 using System.Windows;
 
-namespace Kako.Forms.UI.Views
+namespace Kakao.Login.UI.Views;
+
+public class LoginContent : JamesContent
 {
-    public class LoginContent : JamesContent
+    static LoginContent()
     {
-        static LoginContent()
-        {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(LoginContent), new FrameworkPropertyMetadata(typeof(LoginContent)));
-        }
-        public LoginContent()
-        {
-            
-        }
-    }    
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(LoginContent), new FrameworkPropertyMetadata(typeof(LoginContent)));
+    }
+    public LoginContent()
+    {
+
+    }
 }

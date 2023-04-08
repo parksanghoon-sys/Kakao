@@ -19,11 +19,11 @@ namespace Kakao.Tests.Local.ViewModels
         private readonly TalkWindowManager _talkWindowManager;
 
         [ObservableProperty]
-        private List<KeyValuePair<int, JamesWindow>> _talkWindows;
+        private List<KeyValuePair<string, JamesWindow>> _talkWindows;
         [ObservableProperty]
         private string _receiveText;
         [ObservableProperty]
-        private KeyValuePair<int, JamesWindow> _window;
+        private KeyValuePair<string, JamesWindow> _window;
         public SimulatorViewModel(IEventHub eventHub,TalkWindowManager talkWindowManager)
         {
             _eventHub = eventHub;

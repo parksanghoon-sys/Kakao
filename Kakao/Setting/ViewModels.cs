@@ -1,5 +1,6 @@
 ﻿using Jamesnet.Wpf.Controls;
 using Kakao.Core.Names;
+using Kakao.Login.UI.Views;
 using Kako.Forms.UI.Views;
 using Prism.Ioc;
 using Prism.Modularity;

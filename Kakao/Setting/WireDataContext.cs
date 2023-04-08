@@ -3,6 +3,7 @@ using Kakao.Chats.Local.ViewModels;
 using Kakao.Forms.Local.ViewModels;
 using Kakao.Friends.Local.ViewModels;
 using Kakao.Login.Local.ViewModels;
+using Kakao.Login.UI.Views;
 using Kakao.Main.Local.ViewModels;
 using Kakao.More.Local.ViewModels;
 using Kakao.Talk.Local.ViewModels;
@@ -28,6 +29,8 @@ namespace Kakao.Setting
             items.Register<TalkWindow, TalkViewModel>();
             items.Register<TalkContent, TalkContentViewModel>();
             items.Register<SimulatorWindow, SimulatorViewModel>();
+
+            items.Register<GoogleWindow, GoogleViewModel>();
         }
     }
 }
