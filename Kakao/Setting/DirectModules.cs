@@ -4,7 +4,7 @@ using Prism.Modularity;
 namespace Kakao.Setting
 {
     /// <summary>
-    /// Region 을 만들어서 관리 현재 LoginContent 클래스 를 MainRegion에 연결하는 기능
+    /// Region 을 만들어서 관리 현재 LoginContent 클래스 를 MainRegion에 연결하는 기능프리즘기능
     /// </summary>
     internal class DirectModules : IModule
     {
